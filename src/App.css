@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-/* Navbar Styles */
+/* estilo del Navbar */
 .navbar {
   background-color: #16213e;
   padding: 1rem 2rem;
@@ -69,7 +69,7 @@ body {
   color: #00d9ff;
 }
 
-/* CartWidget Styles */
+/* estilo del CartWidget */
 .cart-widget {
   position: relative;
 }
@@ -107,7 +107,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* ItemListContainer Styles */
+/* estilo del ItemListContainer */
 .item-list-container {
   max-width: 1200px;
   margin: 4rem auto;
