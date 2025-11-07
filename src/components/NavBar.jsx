@@ -1,19 +1,18 @@
+import { Link } from 'react-router'
 import CartWidget from './CartWidget'
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-brand">
+        <Link to="/" className="navbar-brand">
           <i className="fa-solid fa-gamepad"></i>
           <h1>Axiom Play</h1>
-        </div>
+        </Link>
         
         <ul className="navbar-categories">
-          <li><a href="#accion">Acción</a></li>
-          <li><a href="#aventura">Aventura</a></li>
-          <li><a href="#deportes">Deportes</a></li>
-          <li><a href="#rpg">RPG</a></li>
+          <li><Link to="/category/smartphones">Smartphones</Link></li>
+          <li><Link to="/category/laptops">Laptops</Link></li>
         </ul>
         
         <CartWidget />
