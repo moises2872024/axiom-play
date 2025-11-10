@@ -27,7 +27,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.navbar-widgets {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-toggler {
+  background-color: #0f3460;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+}
+
+.navbar-toggler:hover {
+  background-color: #1a4d7a;
+}
+
+.navbar-toggler i {
+  color: #eee;
+  font-size: 1.5rem;
 }
 
 .navbar-brand {
@@ -70,6 +101,30 @@ body {
   color: #00d9ff;
 }
 
+/* Dropdown Styles */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: #16213e !important;
+  border: 1px solid #0f3460;
+  margin-top: 0.5rem;
+  min-width: 200px;
+}
+
+.dropdown-item {
+  color: #eee !important;
+  padding: 0.8rem 1.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #0f3460 !important;
+  color: #00d9ff !important;
+}
+
 /* CartWidget Styles */
 .cart-widget {
   position: relative;
@@ -80,11 +135,16 @@ body {
   border: none;
   padding: 0.8rem 1.2rem;
   border-radius: 8px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   color: #eee;
+  min-width: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-button:hover {
