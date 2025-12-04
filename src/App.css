@@ -424,3 +424,53 @@ body {
     height: 300px;
   }
 }
+
+/* NotFound Styles */
+.not-found {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.not-found-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.not-found-content h1 {
+  font-size: 8rem;
+  color: #00d9ff;
+  text-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.not-found-content h2 {
+  font-size: 2rem;
+  color: #eee;
+  margin-bottom: 1rem;
+}
+
+.not-found-content p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+.not-found-btn {
+  display: inline-block;
+  background-color: #00d9ff;
+  color: #16213e;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.not-found-btn:hover {
+  background-color: #00b8d4;
+  transform: translateY(-2px);
+}

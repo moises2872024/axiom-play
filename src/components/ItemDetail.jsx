@@ -8,7 +8,7 @@ function ItemDetail({ product }) {
   return (
     <div className="item-detail">
       <div className="item-detail-images">
-        <img src={product.thumbnail} alt={product.title} className="main-image" />
+        <img src={product.images} alt={product.title} className="main-image" />
       </div>
       <div className="item-detail-info">
         <h2>{product.title}</h2>

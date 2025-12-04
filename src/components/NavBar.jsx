@@ -20,12 +20,9 @@ function Navbar() {
               <i className="fa-solid fa-bars"></i>
             </button>
             <ul className="dropdown-menu dropdown-menu-end">
-              <li><Link className="dropdown-item" to="/category/smartphones">Smartphones</Link></li>
-              <li><Link className="dropdown-item" to="/category/laptops">Laptops</Link></li>
-              <li><Link className="dropdown-item" to="/category/fragrances">Fragrances</Link></li>
-              <li><Link className="dropdown-item" to="/category/beauty">Beauty</Link></li>
-              <li><Link className="dropdown-item" to="/category/furniture">Furniture</Link></li>
-              <li><Link className="dropdown-item" to="/category/groceries">Groceries</Link></li>
+              <li><Link className="dropdown-item" to="/category/gaming laptop">Gaming Laptop</Link></li>
+              <li><Link className="dropdown-item" to="/category/consoles">Consoles</Link></li>
+              <li><Link className="dropdown-item" to="/category/videogames">Videogames</Link></li>
             </ul>
           </div>
           

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
+import { getItems, getItemsByCategory } from '../firebase/db'
 import ItemList from './ItemList'
 
 function ItemListContainer({ greeting }) {
@@ -11,13 +12,10 @@ function ItemListContainer({ greeting }) {
     setLoading(true)
     
     const fetchProducts = new Promise((resolve, reject) => {
-      const url = categoryId 
-        ? `https://dummyjson.com/products/category/${categoryId}`
-        : 'https://dummyjson.com/products'
+      const getData = categoryId ? getItemsByCategory(categoryId) : getItems()
       
-      fetch(url)
-        .then(res => res.json())
-        .then(data => resolve(data.products))
+      getData
+        .then(data => resolve(data))
         .catch(err => reject(err))
     })
 

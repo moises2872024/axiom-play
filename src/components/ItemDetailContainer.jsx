@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
+import { getItemById } from '../firebase/db'
 import ItemDetail from './ItemDetail'
 
 function ItemDetailContainer() {
@@ -11,8 +12,7 @@ function ItemDetailContainer() {
     setLoading(true)
     
     const fetchProduct = new Promise((resolve, reject) => {
-      fetch(`https://dummyjson.com/products/${id}`)
-        .then(res => res.json())
+      getItemById(id)
         .then(data => resolve(data))
         .catch(err => reject(err))
     })

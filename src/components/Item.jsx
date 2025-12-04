@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 function Item({ product }) {
   return (
     <div className="item-card">
-      <img src={product.thumbnail} alt={product.title} />
+      <img src={product.images} alt={product.title} />
       <h3>{product.title}</h3>
       <p className="item-price">${product.price}</p>
       <p className="item-description">{product.description.substring(0, 60)}...</p>
