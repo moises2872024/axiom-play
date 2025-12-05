@@ -1,4 +1,4 @@
-import { getFirestore, collection, getDocs, doc, getDoc, query, where } from "firebase/firestore";
+import { getFirestore, collection, getDocs, doc, getDoc, query, where, addDoc } from "firebase/firestore";
 import { app } from "./config";
 
 const db = getFirestore(app);
@@ -48,6 +48,18 @@ export const getItemById = async (id) => {
         }
     } catch (error) {
         console.error("Error al obtener producto:", error);
+        return null;
+    }
+};
+
+// Agregar datos de las ordenes de compra
+export const createOrder = async (order) => {
+    try {
+        const docRef = await addDoc(collection(db, "orders"), order);
+        console.log("Orden creada con ID: ", docRef.id);
+        return docRef.id;
+    } catch (e) {
+        console.error("Error al crear orden: ", e);
         return null;
     }
 };

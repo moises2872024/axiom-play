@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
 import CartWidget from './CartWidget'
 
 function Navbar() {
@@ -20,9 +20,9 @@ function Navbar() {
               <i className="fa-solid fa-bars"></i>
             </button>
             <ul className="dropdown-menu dropdown-menu-end">
-              <li><Link className="dropdown-item" to="/category/gaming laptop">Gaming Laptop</Link></li>
-              <li><Link className="dropdown-item" to="/category/consoles">Consoles</Link></li>
-              <li><Link className="dropdown-item" to="/category/videogames">Videogames</Link></li>
+              <li><NavLink className="dropdown-item" to="/category/gaming laptop">Gaming Laptop</NavLink></li>
+              <li><NavLink className="dropdown-item" to="/category/consoles">Consoles</NavLink></li>
+              <li><NavLink className="dropdown-item" to="/category/videogames">Videogames</NavLink></li>
             </ul>
           </div>
           
