@@ -116,7 +116,7 @@ Estructura de órdenes:
 
 ## 👤 Autor
 
-[Tu nombre]
+[Moisés Claudio Montt Pñeiro]
 
 ## 📄 Licencia
 
